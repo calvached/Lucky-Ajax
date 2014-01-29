@@ -2,9 +2,9 @@
 
 class Roll < ActiveRecord::Base
   attr_accessible :value
-
+  # Inclusion helper
   validates :value, :inclusion => { :in => (1..6), :message => "must be between 1 and 6" }
-
+  # Before instantiated
   after_initialize :roll_if_value_is_nil
 
   private
