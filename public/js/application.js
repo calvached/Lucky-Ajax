@@ -16,7 +16,7 @@ $(document).ready(function () {
     var randomnumber=Math.floor(Math.random() * 6 + 1);
     var holder = $('#die');
     holder.empty()
-    holder.append(randomnumber)
+    holder.append('<img src="' + randomnumber + '.png"></img>')
 
   }
 
